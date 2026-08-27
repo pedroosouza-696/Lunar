@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;    
+}
+
+.container-direito{
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.titulo-container{
+    margin: 20px;
+}
+
+.baloes-informacoes{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
