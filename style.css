@@ -1,23 +1,34 @@
 *{
     padding: 0;
     margin: 0;    
+    box-sizing: border-box;
 }
 
-.container-direito{
-    display: flex;
-    padding: 10px;
-    margin: 20px;
-    background-color: antiquewhite;
-    border-radius: 10px;
+/*VARIAVEIS DE CORES*/
+:root{ 
+   
+    --roxo: #D5BFFB;
+    --amarelo:#F8E9B7;
+
+    --cinza:#ECECEC;
+    --cinza2:#DADADA;
+    --cinza3:#BEBEBE;
+
+    --preto:#222;
+    --branco:white;
+
 }
 
-.titulo-container{
-    margin: 20px;
-}
+/*FONTE E FUNDO*/
+body{ 
+    background: #d3d3d3;
+    font-family:'Poppins',sans-serif;
+} 
 
-.baloes-informacoes{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+/*CSS DO CABEÇALHO*/
 
+.topo{
+
+    height:90px;
+    background: var(--roxo);
 }

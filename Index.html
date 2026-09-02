@@ -3,44 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+
     <title>Lunar</title>
-</head>
-<header>
-    <h1> Lunar </h1>
-    <nav>
-        <ul>
-            <!-- OPÇÕES VERTICAIS, COLUNA ESQUERDA-->
-            <li><a href= "#Buscar">Buscar</a></li>
-            <li><a href= "#Opções">Opções</a></li>
-            <li><a href= "#Constituição">Constituição</a></li>
-            <li><a href= "#Dúvidas">Dúvidas</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
-    <main>
-        <h2> TESTE PARA MAIN</h2>
-    </main>
-
-<section class="container-direito">
-    <h2 class="titulo-container"> DIREITO CRIMINAL </h2> 
-        
-    <h2 class="titulo-container"> DIREITO CRIMINAL </h2> 
     
-    <h2 class="titulo-container"> DIREITO CRIMINAL </h2> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
 
-    <h2 class="titulo-container"> DIREITO CRIMINAL </h2> 
-</section>
-<!-- JAVASCRIPT -->
+</head>
+   
+<!-- INICIO DO BODY-->
+<body>
 
-<h2 class="baloes-informacoes"> O que é? </h2>
-<h2 class="baloes-informacoes"> Como se aplica? </h2>
-<h2 class="baloes-informacoes"> Quais são? </h2>
-<h2 class="baloes-informacoes"> ...? </h2>
+<!-- Cabeçalho -->
+<header class="topo">
 
-<section> 
+ <!-- COLOCAR A LOGO -->
+    <div class="logo">
+        <img src="logo.png" alt="Logo do site">
+    </div>
+    
+ <!-- SLOGAN-LUNAR -->  
+  <h3 class="slogan"> VOCÊ TEM O DIREITO DE SABER!</h3> 
+  
+  <!-- PARTE DO PERFIL -->
+   <div class="perfil"> 
 
-</section>
+    <div class="text-perfil">
+        <h4> Usuário </h4>
+        <p> Estudante </p>
+    </div>
+   
+    <img src = "perfil.png" alt="Perfil">
+
+   </div>
+
+<!-- FINAL DO CABEÇALHO -->
+</header>
+
+<!-- COLUNA LATERAL -->
+<aside class="coluna-lateral">
+ 
+         <button class="menu-item">    
+            <img src="IMAGEM AQUI" alt="">
+            <span>Buscar</span>
+        </button>
+
+        <button class="menu-item">
+            <img src="IMAGEM AQUI" alt="">
+            <span>Opções</span>
+        </button>
+
+        <button class="menu-item">
+            <img src="IMAGEM AQUI" alt="">
+            <span>Constituição</span>
+        </button>
+
+        <button class="menu-item">
+            <img src="IMAGEM AQUI" alt="">
+            <span>Dúvidas</span>
+        </button>
+
+</aside>
+
+<!-- PARTE PRINCIPAL -->
+ <main> 
+    <!-- BALÕES DOS DIREITOS -->
+     <section class="baloes1">
+        
+            <button class="balao ativo" data-direito="fundamental">
+                Direitos Fundamentais
+            </button>
+
+            <button class="balao1" data-direito="civil">
+                Direito Civil
+            </button>
+
+            <button class="balao1" data-direito="digital">
+                Direito Digital
+            </button>
+
+            <button class="balao1" data-direito="trabalhista">
+                Direitos Trabalhistas 
+            </button>
+
+     </section>
+
+     <!-- SELECIONADO -->
+      <section class="selecionado">
+        <h1 id="direito-selecionado">
+            Direito Fundamental
+        </h1>
+      </section>
+
+      <!-- Área dos conteúdos -->
+       <section id="accordion-container" class="accordion">
+         
+       </section>
+ </main>  
+
+<!-- link js -->
+<script src="script.js"></script>
+
+<!--FINAL DO BODY -->
 </body>
+
 </html>
