@@ -64,7 +64,8 @@ width: 200px;
 
 /*CSS DA COLUNA LATERAL, OPÇÕES E ETC*/
 .coluna-lateral{
-
+    
+    margin-top: 20px;
     width: 100px;
     height: 100vh;
     top: 90px;
@@ -107,18 +108,89 @@ width: 200px;
 .baloes1{
     
     margin-left: 120px;
+    margin-right:100px;
     padding: 30px
 }   
 
-.balao1{ 
-    
-    background:#f5f5f5;
+.baloes1{
 
+margin-top: 85px;
+background:#f5f5f5;
 padding:25px;
 border-radius:25px;
 display:flex;
 justify-content:space-around;
 flex-wrap:wrap;
 gap:20px;
+
+}
+
+.balao1{ 
+    
+ background:#f5f5f5;
+padding:25px;
+border-radius:25px;
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+gap:20px;
+cursor: pointer;
+
+}
+
+
+.balao1{
+
+background:var(--cinza2);
+border:none;
+padding:18px 28px;
+border-radius:18px;
+font-family:'Cinzel',serif;
+font-weight:bold;
+cursor:pointer;
+transition:.35s;
+min-width:200px;
+
+}
+
+.balao1:hover{
+
+transform:translateY(-5px);
+background:#cfcfcf;
+
+}
+
+.ativa{
+
+background:var(--roxo);
+color:#4a267a;
+
+}
+
+/* TITULO*/
+.selecionado{
+    
+margin:35px 0;
+text-align:center;
+font-family:'Cinzel',serif;
+font-size:15px;
+
+}
+
+.accordion{
+    
+    display: flex;
+    flex-direction: column; 
+    gap: 18px;
+}
+
+.item{
+margin-left: 120px; 
+margin-right: 100px ; 
+background:#efefef;
+border-radius:18px;
+overflow:hidden;
+transition:.4s;
+box-shadow:0 4px 8px rgba(0,0,0,.05);
 
 }
