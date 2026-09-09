@@ -177,6 +177,7 @@ font-size:15px;
 
 }
 
+/* BALOES INFORMATIVOS*/
 .accordion{
     
     display: flex;
@@ -192,5 +193,65 @@ border-radius:18px;
 overflow:hidden;
 transition:.4s;
 box-shadow:0 4px 8px rgba(0,0,0,.05);
+}
 
+.item:hover{
+
+transform:translateY(-5px);
+background:#cfcfcf;
+
+}
+
+.item-topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px;
+  
+}
+
+.item-topo h2{
+    font-family:'Cinzel', serif;
+    font-size: 20px;
+}
+
+.seta{
+    font-size:25px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.item.aberto .item-conteudo{
+    max-height:600px;
+    padding:20px 22px;
+}
+
+.item.aberto .seta{
+    transform:rotate(180deg);
+}
+
+/* PARTE PARA FICAR RESPONSIVO*/
+
+@media(max-width:900px){
+
+    .coluna-lateral{
+        width:75px;
+    }
+
+    .conteudo{
+        margin-left:90px;
+    }
+
+    .baloes1{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .balao1{
+        width:100%;
+    }
+
+    .slogan{
+        display:none;
+    }
 }
