@@ -29,13 +29,18 @@ body{
 
 .topo{
 
+    position:absolute;
+    top:0;
+    left:0;
     height: 100px;
+    width:100vw;
     background: var(--roxo);
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 60px;
     box-shadow: 0px 10px rgba(0,0,0,.08);
+    z-index: 10;
 }
 
 /*IMAGEM DA LOGO*/
@@ -64,34 +69,37 @@ width: 200px;
 
 /*CSS DA COLUNA LATERAL, OPÇÕES E ETC*/
 .coluna-lateral{
-    
-    margin-top: 20px;
+
     width: 100px;
     height: 100vh;
     top: 90px;
     left: 0;
-    gap: 40px;
-    padding: 20px 30px;
-    background: #efefef;
+    top:0;
+    gap: 50px;
+    padding: 200px 30px 20px 30px;
+    background: #efefef96;
     position: fixed;
     display:flex;
     flex-direction: column;
     align-items: center;
     border-right: 2px solid rgba(0,0,0,.05);
+    z-index: 1;
 
 }
 
 /*CSS DOS ITENS DA COLUNA LATERAL*/
 .coluna-item{ 
 
+    margin-top: 1vh;
     background: none;
     border: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     gap: 8px;
     cursor: pointer;
     transition: .3s;
+ 
 }
 
 /*CSS DAS IMAGENS DOS ITENS DA COLUNA LATERAL*/
@@ -114,7 +122,7 @@ width: 200px;
 
 .baloes1{
 
-margin-top: 85px;
+margin-top: 20vh;
 background:#f5f5f5;
 padding:25px;
 border-radius:25px;
